@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Quality Prediction</title>
+</head>
+<body>
+    <h2>🌊 Water Quality Predictor</h2>
+    <form action="/predict" method="post">
+        <label>pH:</label><input type="text" name="ph"><br><br>
+        <label>Hardness:</label><input type="text" name="Hardness"><br><br>
+        <label>Solids:</label><input type="text" name="Solids"><br><br>
+        <label>Chloramines:</label><input type="text" name="Chloramines"><br><br>
+        <label>Sulfate:</label><input type="text" name="Sulfate"><br><br>
+        <label>Conductivity:</label><input type="text" name="Conductivity"><br><br>
+        <label>Organic_carbon:</label><input type="text" name="Organic_carbon"><br><br>
+        <label>Trihalomethanes:</label><input type="text" name="Trihalomethanes"><br><br>
+        <label>Turbidity:</label><input type="text" name="Turbidity"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
